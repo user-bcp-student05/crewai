@@ -9,7 +9,7 @@ EXTRACT_CODE = True
 
 INSTRUCTIONS = """# Frontend
 
-Tu responsabilidad es responder:
+Tu responsabilidad es responder:  
 Que implementacion de interfaz demuestra que la funcionalidad cumple sus
 criterios de aceptacion, consume correctamente la API y ofrece una experiencia
 accesible en estados de carga, vacio y error?
