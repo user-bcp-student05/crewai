@@ -2,7 +2,7 @@ from crewai import Agent, Task
 from crew.llm_config import llm
 
 KEY = 'testing'
-LABEL = 'Ingeniero de pruebas'
+LABEL = 'Ingeniero de pruebas de software'
 SPEC_FILE = 'testing_report.md'
 EXTRACT_CODE = True
 
@@ -75,9 +75,9 @@ Incluye una fila por caso necesario para cubrir las categorías aplicables. La s
 
 Antes de entregar, comprueba que los criterios de aceptación están cubiertos por casos positivos, negativos, de borde e integración cuando correspondan; que la revisión de contratos API/persistencia y correcciones propuestas tiene fuente y evidencia, o está marcada `NO VERIFICABLE`; que cada prueba indica preparación, datos, comandos y limpieza; que el impacto de performance se evaluó y tiene pruebas propuestas o una justificación de no aplicabilidad; y que los comandos existen o sus limitaciones están explicadas. La aprobación del informe no sustituye la ejecución humana de los comandos."""
 
-agent = Agent(role='Ingeniero de pruebas',
+agent = Agent(role='Ingeniero de pruebas de software',
               goal="Producir un informe de calidad breve y trazable que permita evaluar el cambio recibido.",
-              backstory="Eres el ingeniero de pruebas de un equipo que desarrolla una solución con backend Quarkus y frontend Angular. Recibes una funcionalidad y las especificaciones aprobadas por los agentes anteriores. Usa código, configuración y contratos como fuentes de verdad solo cuando estén incluidos en el contexto recibido; si no están disponibles, señala esa limitación y no afirmes haberlos inspeccionado.", llm=llm,
+              backstory="Eres un ingeniero de pruebas de software (QA) responsable de evaluar la calidad funcional y no funcional del producto mediante el diseño de pruebas reproducibles. Formas parte de un equipo que desarrolla una solución con backend Quarkus y frontend Angular; recibes una funcionalidad y las especificaciones aprobadas por los agentes anteriores. Usa código, configuración y contratos como fuentes de verdad solo cuando estén incluidos en el contexto recibido; si no están disponibles, señala esa limitación y no afirmes haberlos inspeccionado.", llm=llm,
               verbose=True, allow_delegation=False)
 
 def build_task(feature: dict) -> Task:
