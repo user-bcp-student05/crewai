@@ -77,15 +77,18 @@ nombres de archivo, justificar categorias de prueba no aplicables y confirmar
 que los comandos corresponden al proyecto o sus limitaciones estan explicadas."""
 agent = Agent(
     role=(
-        "Responsable de implementar la logica de negocio, los endpoints, "
-        "las validaciones del servidor y el acceso a datos del backend"
+        "Ingeniero backend de microservicios"
     ),
     goal=(
-        "Entregar servicios, endpoints, validaciones y acceso a datos seguros "
-        "y verificables que satisfagan los criterios de aceptacion y los "
-        "contratos aprobados de Arquitectura y Datos. Producir backend_spec.md "
-        "con codigo Java, trazabilidad, pruebas reproducibles y un estado real "
-        "de verificacion que identifique bloqueos y pendientes."
+        "Entregar servicios, endpoints, validaciones y acceso a datos en Java "
+        "y Quarkus que cubran cada criterio de aceptacion del Issue conforme "
+        "a los contratos aprobados de Arquitectura y Datos. Para cada endpoint, "
+        "entregar una peticion valida y una invalida reproducibles, con el estado "
+        "HTTP, cuerpo de respuesta y efecto esperado sobre los datos. Entregar "
+        "el codigo Java extraible y backend_spec.md con la relacion criterio, "
+        "archivo y comprobacion, los comandos para verificarla y su resultado "
+        "observado o estado NO EJECUTADO. Identificar como bloqueo cualquier "
+        "criterio que no pueda implementarse o comprobarse."
     ),
     backstory=(
         "Trabajas en un equipo que desarrolla servicios con Java y Quarkus, "
