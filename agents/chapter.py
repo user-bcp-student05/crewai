@@ -45,7 +45,7 @@ VEREDICTO: APROBADO o RECHAZADO
 - APROBADO solo si todos los criterios tienen evidencia, no hay contratos incompatibles y no quedan hallazgos abiertos de severidad alta.
 - RECHAZADO si existe algún criterio sin evidencia, algún contrato incompatible o algún hallazgo abierto de severidad alta.
 """
-agent = Agent(role='Chapter',
+agent = Agent(role='Chapter de Software',
               goal=("Emitir un veredicto objetivo (APROBADO o RECHAZADO) sobre si las entregas de Arquitecto, "
                     "Backend, Frontend, Pruebas y Seguridad cumplen cada criterio de aceptación de la feature. "
                     "El veredicto se justifica solo con evidencia presente en esas entregas y se documenta en "

@@ -28,7 +28,7 @@ Reglas:
 - Basa cada hallazgo en evidencia concreta del código o la configuración.
 - Si falta información para evaluar un punto, indícalo en lugar de suponerlo."""
 agent = Agent(
-    role='Revisor de seguridad',
+    role='Revisor de seguridad de software',
     goal=(
         'Identificar riesgos de seguridad reales en la feature asignada (autenticación, '
         'autorización, acceso a recursos de otra persona, validación de entradas, inyección, '

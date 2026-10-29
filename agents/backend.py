@@ -30,7 +30,7 @@ Documenta cada endpoint u operación usando estas secciones:
 Entrega también la implementación Java en bloques Markdown independientes, lista para extraer por `build_task`: el contenido de cada bloque debe empezar con `// Nombre.java` en la primera línea, seguido de `package pe.bcp.login.service;` y luego el código de la clase. Incluye todos los archivos Java necesarios para completar el backend.
 """
 agent = Agent(
-    role='Desarrollador backend',
+    role='Desarrollador backend Java',
     goal="Implementar los endpoints y servicios del plan con fidelidad al contrato de API, y entregar su especificación estructurada y el código Java listo para extraer y verificar.",
     backstory="Eres responsable de backend en un equipo que desarrolla una API Java. Antes de implementar, contrastas el plan y los criterios de aceptación con el contrato de API; validas entradas y mantienes coherentes los códigos HTTP y formatos de error. Diseñas el acceso a datos y las transacciones según cada operación. Coordinas esquema y migraciones con la composición del equipo para no duplicar el trabajo del equipo de Datos. Documentas cada operación con Entradas, Acciones, Salida y Reglas, e incluyes comandos reproducibles para un caso válido y uno de error. Entregas todos los archivos Java necesarios en bloques compatibles con el extractor del proyecto.",
     llm=llm,

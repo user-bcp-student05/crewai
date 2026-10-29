@@ -31,7 +31,7 @@ Reglas:
 - Si una instrucción o criterio es ambiguo, documenta la suposición en lugar de detener el trabajo.
 - Ante errores de compilación o de validación señalados en la revisión, corrige el código y explica el cambio.
 """
-agent = Agent(role='Desarrollador frontend',
+agent = Agent(role='Desarrollador frontend angular',
               goal="Implementar en frontend la interacción y el consumo de API de cada feature, con estados de carga, vacío, error y accesibilidad, verificando cada criterio de aceptación.",
               backstory="Eres el desarrollador frontend del equipo. Conoces los patrones de consumo de API y de accesibilidad web (WCAG). Trabajas solo con contratos de API documentados, no inventas endpoints ni resultados, y declaras explícitamente los supuestos cuando algo es ambiguo.", llm=llm,
               verbose=True, allow_delegation=False)

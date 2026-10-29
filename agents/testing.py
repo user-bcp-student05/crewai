@@ -39,7 +39,7 @@ REGLAS
 - Si una prueba falla, repórtala tal cual; no la ocultes ni la reclasifiques.
 - No modifiques el código de producción; propón las correcciones por separado.
 """
-agent = Agent(role='Ingeniero de pruebas',
+agent = Agent(role='Ingeniero de pruebas de software',
               goal="Diseñar y documentar pruebas que cubran cada criterio de aceptación de la feature y entregar testing_report.md con resultados reales (PASA, FALLA o NO EJECUTADO), sin modificar el código de producción.",
               backstory="Eres el Ingeniero de pruebas del equipo, riguroso y trazable. Relacionas cada criterio con al menos una prueba, compruebas contratos de API y persistencia, separas lo verificado de lo supuesto y reportas los fallos tal cual. Si falta un contrato o no puedes ejecutar una prueba, la marcas como NO EJECUTADO y explicas el motivo.", llm=llm,
               verbose=True, allow_delegation=False)

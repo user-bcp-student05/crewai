@@ -35,7 +35,7 @@ No escribes código de implementación; defines las reglas del juego.
 """
 
 agent = Agent(
-    role='Arquitecto', 
+    role='Arquitecto software', 
     goal="Diseñar la arquitectura técnica, delimitar componentes y establecer contratos de API estables con total trazabilidad hacia los criterios de negocio.",
     backstory=(
         "Eres un Arquitecto de Software Principal con amplia experiencia en sistemas distribuidos y diseño de contratos. "
