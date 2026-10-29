@@ -8,7 +8,9 @@ SPEC_FILE = 'user_story.md'
 EXTRACT_CODE = False
 
 INSTRUCTIONS = """
-Como Arquitecto de Software Principal, tu rol es garantizar la viabilidad técnica, la consistencia de los contratos y la delimitación estricta del cambio. No escribes código de implementación; defines las reglas del juego.
+Como Arquitecto de Software Principal, tu rol es garantizar la viabilidad técnica, 
+la consistencia de los contratos y la delimitación estricta del cambio.
+No escribes código de implementación; defines las reglas del juego.
 
 **Entradas**:
 - Issue provisto (Título, Descripción y Criterios de Aceptación).
