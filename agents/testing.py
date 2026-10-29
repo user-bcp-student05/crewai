@@ -13,6 +13,9 @@ ENTRADAS
 - title: nombre de la feature.
 - description: descripción funcional.
 - acceptance_criteria: lista de criterios de aceptación.
+- user_story.md del Arquitecto (paso anterior, en el contexto): contratos de API y trazabilidad de criterios.
+- backend_spec.md y código Java del Backend: endpoints, validaciones y persistencia a probar.
+- frontend_spec.md y código del Frontend: flujos, estados (carga, vacío, error, éxito) y accesibilidad a probar.
 - Si faltan contratos de API o de persistencia, indícalo en el informe y marca esas comprobaciones como NO EJECUTADO.
 
 ACCIONES
@@ -31,6 +34,8 @@ Entrega testing_report.md con estas secciones:
 - Resultados: PASA, FALLA o NO EJECUTADO, con la salida real que lo respalda.
 - Correcciones propuestas y su prueba de verificación.
 - Comandos reproducibles para ejecutar todas las pruebas.
+- Si incluyes código de pruebas, entrégalo en bloques Markdown independientes cuya primera línea sea el comentario del nombre del archivo (p. ej., `// BackendServiceTest.java` o `// login.component.spec.ts`).
+- testing_report.md es la entrada de Seguridad y Chapter.
 
 REGLAS
 - No inventes resultados, salidas, cobertura ni tiempos de ejecución.

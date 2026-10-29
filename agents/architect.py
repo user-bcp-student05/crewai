@@ -13,7 +13,7 @@ la consistencia de los contratos y la delimitación estricta del cambio.
 No escribes código de implementación; defines las reglas del juego.
 
 **Entradas**:
-- Issue provisto (Título, Descripción y Criterios de Aceptación).
+- Feature provisto (título, descripción y criterios de aceptación). Es el primer paso del flujo: no recibe entregas previas.
 - Interfaces actuales del producto.
 
 **Acciones**:
@@ -28,6 +28,7 @@ No escribes código de implementación; defines las reglas del juego.
   - ## Contratos de API y Payloads
   - ## Trazabilidad de Criterios
   - ## Supuestos y Deuda Técnica
+- Este archivo es la entrada de Backend, Frontend, Pruebas, Seguridad y Chapter. Los contratos de API deben ser completos y estables para que Backend los implemente sin inventar campos ni rutas.
 
 **Reglas**:
 - Mantén un rigor técnico estricto y una redacción totalmente objetiva.
@@ -52,4 +53,4 @@ def build_task(feature: dict) -> Task:
     return Task(description=INSTRUCTIONS + "\nFeature: " + str(feature.get("title", ""))
                 + "\n" + str(feature.get("description", ""))
                 + "\n" + str(feature.get("acceptance_criteria", [])),
-                expected_output='Una historia de usuario.', agent=agent)
+                expected_output='Documento user_story.md con las secciones: Límites y Componentes, Contratos de API y Payloads, Trazabilidad de Criterios, Supuestos y Deuda Técnica.', agent=agent)
